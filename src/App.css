@@ -1,3 +1,233 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar
+{
+  display: none;
+}
+
+body
+{
+  background-color: #030302;
+  color: aliceblue;
+}
+.App
+{
+  height: 100%;
+  background-color: #001114;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.Container
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+.Header
+{
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images7.alphacoders.com/100/1002773.jpg);
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0,  100% 65%, 0 100%);
+  scroll-snap-align: start end;
+}
+
+.Header h1
+{
+  opacity: 1;
+  position: fixed;
+  top: 10vh;
+  left: 35vw;
+  font-family: 'Bangers', cursive;
+  font-size: 5em;
+}
+
+.Card-Planets
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.Card-Planets::before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, #000000, transparent);
+  z-index: 1;
+}
+
+.Card-Planets:nth-child(1)
+{
+  background: url(https://wallpapercave.com/wp/wp4918119.png);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.7;
+}
+.Card-Planets:nth-child(2)
+{ background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7cf7a4bf-a23d-4534-8ade-2b8cbe39518d/d9f5c2b-cf5a4e3a-4cc0-42c9-bbc9-fce2df0019d4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdjZjdhNGJmLWEyM2QtNDUzNC04YWRlLTJiOGNiZTM5NTE4ZFwvZDlmNWMyYi1jZjVhNGUzYS00Y2MwLTQyYzktYmJjOS1mY2UyZGYwMDE5ZDQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mP_CW0wTiw-V5LXeLScxtVOC0XsVtZQFpSmFR7CaS30);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.7;
+}
+.Card-Planets:nth-child(3)
+{
+  background: url(https://images8.alphacoders.com/642/642527.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.7;
+}
+.Card-Planets:nth-child(4)
+{
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5236376f-305d-42da-8e2d-48455360a090/de24jbm-76cb9ff5-f3be-4493-9aa1-7aeb6e1efd21.png/v1/fill/w_1280,h_720,q_80,strp/desktop_wallpaper_4k_rick_and_morty_by_jorgehardt_de24jbm-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNTIzNjM3NmYtMzA1ZC00MmRhLThlMmQtNDg0NTUzNjBhMDkwXC9kZTI0amJtLTc2Y2I5ZmY1LWYzYmUtNDQ5My05YWExLTdhZWI2ZTFlZmQyMS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.lVih8_MzWLdXKAVEOGFReaoCTMpm1Int-NRaZqpM6rM);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.7;
+}
+.Card-Planets:nth-child(5)
+{
+  background: url(https://images3.alphacoders.com/812/812407.jpg);
+  background-size: auto;
+  background-attachment:fixed;
+  opacity: 0.7;
+}
+.Card-Planets:nth-child(6)
+{
+  background: url(https://www.freepnglogos.com/uploads/rick-and-morty/rick-and-morty-background-wallpapers-3.jpg);
+  background-size: cover;
+  background-attachment:fixed;
+  opacity: 0.7;
+}
+.Card-Planets:nth-child(7)
+{
+  background: url(https://images.alphacoders.com/669/669993.png);
+  background-size: cover;
+  background-attachment:fixed;
+  opacity: 0.7;
+}
+.Card-Planets:nth-child(8)
+{
+  background: url(https://images3.alphacoders.com/879/879998.jpg);
+  background-size: cover;
+  background-attachment:fixed;
+  opacity: 0.7;
+}
+.App h2
+{
+  font-size: 5em;
   text-align: center;
+  font-family: 'Cormorant SC', serif;
+
+}
+.Card-Planets-title
+{
+  position: relative;
+  bottom: 2vw;
+  left: -20vw;
+  font-size: 4rem;
+  background-attachment:local;
+  z-index: 3;
+  opacity: 1;
+}
+
+.Card-Info
+{
+  width: 40%;
+  height: 20%;
+  position: relative;
+  bottom: 2vw;
+  left: -20vw;
+  z-index: 3;
+  font-size: 1.6em;
+  font-weight: 0.5rem;
+  opacity: 1;
+  font-family: 'Indie Flower', cursive;
+}
+.Card-Info:hover
+{
+  background: linear-gradient(to bottom,#000000, transparent);
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 1.8em;
+}
+
+.Planets
+{ 
+  position: relative;
+  top: -10vh;
+  left: -20vw;
+}
+
+
+.container-missions
+{
+  position: relative;
+  top: 700vh;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images4.alphacoders.com/102/1020142.jpg);
+  background-size: cover;
+  background-position: right;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  scroll-snap-align: start;
+}
+
+.container-missions h2
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: 'Bangers', cursive;
+  color: #13AFC2;
+  margin-top: 30px;
+}
+
+.mission-card
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 150px;
+  padding: 5px 0;
+  margin: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  opacity: 0.8;
+  background: linear-gradient(to top, #0a0522, transparent);
+}
+
+.mission-card:hover
+{
+  background: linear-gradient(#fefdff, transparent);
+  color: #000000;
+  border-radius: 12px;
+  padding: 20px;
 }

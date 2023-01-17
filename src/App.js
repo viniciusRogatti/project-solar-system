@@ -6,7 +6,7 @@ import Missions from './components/Missions';
 class App extends Component {
   render() {
     return (
-      <section>
+      <section className="App">
         <Header />
         <SolarSystem />
         <Missions />
